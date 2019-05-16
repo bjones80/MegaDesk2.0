@@ -29,6 +29,7 @@ namespace MegaDesk_Jones
         private void NumericUpDown2_ValueChanged(object sender, EventArgs e)
         {
 
+
         }
     }
 }
