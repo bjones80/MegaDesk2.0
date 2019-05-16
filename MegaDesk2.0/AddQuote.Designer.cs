@@ -37,16 +37,16 @@
             this.delivery = new System.Windows.Forms.Label();
             this.widthTxt = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.numericUpDownWidth = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.deliveryDropDown = new System.Windows.Forms.ComboBox();
-            this.sufaceMaterialDrop = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWidth)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.numWidth = new System.Windows.Forms.NumericUpDown();
+            this.numDepth = new System.Windows.Forms.NumericUpDown();
+            this.numDrawer = new System.Windows.Forms.NumericUpDown();
+            this.btnAddQuote = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.dropDelivery = new System.Windows.Forms.ComboBox();
+            this.dropSurfaceMaterial = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.numWidth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numDepth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numDrawer)).BeginInit();
             this.SuspendLayout();
             // 
             // newQuote
@@ -137,128 +137,128 @@
             this.label7.TabIndex = 9;
             this.label7.Text = "Depth:";
             // 
-            // numericUpDownWidth
+            // numWidth
             // 
-            this.numericUpDownWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownWidth.Location = new System.Drawing.Point(200, 148);
-            this.numericUpDownWidth.Maximum = new decimal(new int[] {
+            this.numWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numWidth.Location = new System.Drawing.Point(200, 148);
+            this.numWidth.Maximum = new decimal(new int[] {
             96,
             0,
             0,
             0});
-            this.numericUpDownWidth.Minimum = new decimal(new int[] {
+            this.numWidth.Minimum = new decimal(new int[] {
             24,
             0,
             0,
             0});
-            this.numericUpDownWidth.Name = "numericUpDownWidth";
-            this.numericUpDownWidth.Size = new System.Drawing.Size(77, 26);
-            this.numericUpDownWidth.TabIndex = 10;
-            this.numericUpDownWidth.Value = new decimal(new int[] {
+            this.numWidth.Name = "numWidth";
+            this.numWidth.Size = new System.Drawing.Size(77, 26);
+            this.numWidth.TabIndex = 10;
+            this.numWidth.Value = new decimal(new int[] {
             24,
             0,
             0,
             0});
             // 
-            // numericUpDown2
+            // numDepth
             // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown2.Location = new System.Drawing.Point(200, 180);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.numDepth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numDepth.Location = new System.Drawing.Point(200, 180);
+            this.numDepth.Maximum = new decimal(new int[] {
             48,
             0,
             0,
             0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.numDepth.Minimum = new decimal(new int[] {
             12,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(77, 26);
-            this.numericUpDown2.TabIndex = 11;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.numDepth.Name = "numDepth";
+            this.numDepth.Size = new System.Drawing.Size(77, 26);
+            this.numDepth.TabIndex = 11;
+            this.numDepth.Value = new decimal(new int[] {
             24,
             0,
             0,
             0});
-            this.numericUpDown2.ValueChanged += new System.EventHandler(this.NumericUpDown2_ValueChanged);
+            this.numDepth.ValueChanged += new System.EventHandler(this.NumericUpDown2_ValueChanged);
             // 
-            // numericUpDown1
+            // numDrawer
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(228, 228);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.numDrawer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numDrawer.Location = new System.Drawing.Point(228, 228);
+            this.numDrawer.Maximum = new decimal(new int[] {
             7,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(77, 26);
-            this.numericUpDown1.TabIndex = 14;
+            this.numDrawer.Name = "numDrawer";
+            this.numDrawer.Size = new System.Drawing.Size(77, 26);
+            this.numDrawer.TabIndex = 14;
             // 
-            // button1
+            // btnAddQuote
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(67, 367);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 43);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Add Quote";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAddQuote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddQuote.Location = new System.Drawing.Point(67, 367);
+            this.btnAddQuote.Name = "btnAddQuote";
+            this.btnAddQuote.Size = new System.Drawing.Size(100, 43);
+            this.btnAddQuote.TabIndex = 15;
+            this.btnAddQuote.Text = "Add Quote";
+            this.btnAddQuote.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnCancel
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(188, 367);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 43);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Cancle";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(188, 367);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(100, 43);
+            this.btnCancel.TabIndex = 16;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // deliveryDropDown
+            // dropDelivery
             // 
-            this.deliveryDropDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deliveryDropDown.FormattingEnabled = true;
-            this.deliveryDropDown.Items.AddRange(new object[] {
+            this.dropDelivery.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dropDelivery.FormattingEnabled = true;
+            this.dropDelivery.Items.AddRange(new object[] {
             "3 Day",
             "5 Day ",
             "7 Day",
             "Normal (14 Day)"});
-            this.deliveryDropDown.Location = new System.Drawing.Point(123, 268);
-            this.deliveryDropDown.Name = "deliveryDropDown";
-            this.deliveryDropDown.Size = new System.Drawing.Size(121, 28);
-            this.deliveryDropDown.TabIndex = 17;
+            this.dropDelivery.Location = new System.Drawing.Point(123, 268);
+            this.dropDelivery.Name = "dropDelivery";
+            this.dropDelivery.Size = new System.Drawing.Size(121, 28);
+            this.dropDelivery.TabIndex = 17;
             // 
-            // sufaceMaterialDrop
+            // dropSurfaceMaterial
             // 
-            this.sufaceMaterialDrop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sufaceMaterialDrop.FormattingEnabled = true;
-            this.sufaceMaterialDrop.Items.AddRange(new object[] {
+            this.dropSurfaceMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dropSurfaceMaterial.FormattingEnabled = true;
+            this.dropSurfaceMaterial.Items.AddRange(new object[] {
             "Laminate",
             "Oak",
             "Rosewood",
             "Veneer",
             "Pine"});
-            this.sufaceMaterialDrop.Location = new System.Drawing.Point(208, 316);
-            this.sufaceMaterialDrop.Name = "sufaceMaterialDrop";
-            this.sufaceMaterialDrop.Size = new System.Drawing.Size(121, 28);
-            this.sufaceMaterialDrop.TabIndex = 18;
+            this.dropSurfaceMaterial.Location = new System.Drawing.Point(208, 316);
+            this.dropSurfaceMaterial.Name = "dropSurfaceMaterial";
+            this.dropSurfaceMaterial.Size = new System.Drawing.Size(121, 28);
+            this.dropSurfaceMaterial.TabIndex = 18;
             // 
             // AddQuote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(434, 450);
-            this.Controls.Add(this.sufaceMaterialDrop);
-            this.Controls.Add(this.deliveryDropDown);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDownWidth);
+            this.Controls.Add(this.dropSurfaceMaterial);
+            this.Controls.Add(this.dropDelivery);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnAddQuote);
+            this.Controls.Add(this.numDrawer);
+            this.Controls.Add(this.numDepth);
+            this.Controls.Add(this.numWidth);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.widthTxt);
             this.Controls.Add(this.delivery);
@@ -270,9 +270,9 @@
             this.Controls.Add(this.newQuote);
             this.Name = "AddQuote";
             this.Text = "Add Quote";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWidth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numWidth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numDepth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numDrawer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,12 +289,12 @@
         private System.Windows.Forms.Label delivery;
         private System.Windows.Forms.Label widthTxt;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.NumericUpDown numericUpDownWidth;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox deliveryDropDown;
-        private System.Windows.Forms.ComboBox sufaceMaterialDrop;
+        private System.Windows.Forms.NumericUpDown numWidth;
+        private System.Windows.Forms.NumericUpDown numDepth;
+        private System.Windows.Forms.NumericUpDown numDrawer;
+        private System.Windows.Forms.Button btnAddQuote;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.ComboBox dropDelivery;
+        private System.Windows.Forms.ComboBox dropSurfaceMaterial;
     }
 }

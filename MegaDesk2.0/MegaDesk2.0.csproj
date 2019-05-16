@@ -7,7 +7,7 @@
     <ProjectGuid>{CE62D351-EFDC-46AA-99B4-58AE1B4A1292}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>MegaDesk_Jones</RootNamespace>
-    <AssemblyName>MegaDesk-Jones</AssemblyName>
+    <AssemblyName>MegaDesk2.0</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
