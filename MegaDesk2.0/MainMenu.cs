@@ -19,7 +19,7 @@ namespace MegaDesk_Jones
 
         private void NewQuote_Click(object sender, EventArgs e)
         {
-            AddQuote frmAddQuote = new AddQuote(this);
+            AddQuote frmAddQuote = new AddQuote(this); 
             frmAddQuote.Show(this);
             Hide();
         }
