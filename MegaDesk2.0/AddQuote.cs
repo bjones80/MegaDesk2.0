@@ -39,5 +39,7 @@ namespace MegaDesk_Jones
             frmViewQuotes.Show(this);
             Hide();
         }
+
+      
     }
 }

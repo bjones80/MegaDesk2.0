@@ -75,7 +75,7 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(264, 133);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(229, 30);
             this.textBox1.TabIndex = 2;
@@ -150,7 +150,7 @@
             // 
             this.numWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numWidth.Location = new System.Drawing.Point(267, 182);
-            this.numWidth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numWidth.Margin = new System.Windows.Forms.Padding(4);
             this.numWidth.Maximum = new decimal(new int[] {
             96,
             0,
@@ -174,7 +174,7 @@
             // 
             this.numDepth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numDepth.Location = new System.Drawing.Point(267, 222);
-            this.numDepth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numDepth.Margin = new System.Windows.Forms.Padding(4);
             this.numDepth.Maximum = new decimal(new int[] {
             48,
             0,
@@ -199,7 +199,7 @@
             // 
             this.numDrawer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numDrawer.Location = new System.Drawing.Point(304, 281);
-            this.numDrawer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numDrawer.Margin = new System.Windows.Forms.Padding(4);
             this.numDrawer.Maximum = new decimal(new int[] {
             7,
             0,
@@ -213,7 +213,7 @@
             // 
             this.btnAddQuote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddQuote.Location = new System.Drawing.Point(89, 452);
-            this.btnAddQuote.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddQuote.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddQuote.Name = "btnAddQuote";
             this.btnAddQuote.Size = new System.Drawing.Size(133, 53);
             this.btnAddQuote.TabIndex = 15;
@@ -225,7 +225,7 @@
             // 
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Location = new System.Drawing.Point(251, 452);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(133, 53);
             this.btnCancel.TabIndex = 16;
@@ -243,7 +243,7 @@
             "7 Day",
             "Normal (14 Day)"});
             this.dropDelivery.Location = new System.Drawing.Point(164, 330);
-            this.dropDelivery.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dropDelivery.Margin = new System.Windows.Forms.Padding(4);
             this.dropDelivery.Name = "dropDelivery";
             this.dropDelivery.Size = new System.Drawing.Size(160, 33);
             this.dropDelivery.TabIndex = 17;
@@ -259,7 +259,7 @@
             "Veneer",
             "Pine"});
             this.dropSurfaceMaterial.Location = new System.Drawing.Point(277, 389);
-            this.dropSurfaceMaterial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dropSurfaceMaterial.Margin = new System.Windows.Forms.Padding(4);
             this.dropSurfaceMaterial.Name = "dropSurfaceMaterial";
             this.dropSurfaceMaterial.Size = new System.Drawing.Size(160, 33);
             this.dropSurfaceMaterial.TabIndex = 18;
@@ -285,7 +285,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.custName);
             this.Controls.Add(this.newQuote);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddQuote";
             this.Text = "Add Quote";
             ((System.ComponentModel.ISupportInitialize)(this.numWidth)).EndInit();
