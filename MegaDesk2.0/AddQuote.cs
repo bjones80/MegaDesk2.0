@@ -31,5 +31,13 @@ namespace MegaDesk_Jones
 
 
         }
+
+        private void BtnAddQuote_Click(object sender, EventArgs e)
+        {
+
+            ViewQuotes frmViewQuotes = new ViewQuotes(this);
+            frmViewQuotes.Show(this);
+            Hide();
+        }
     }
 }
