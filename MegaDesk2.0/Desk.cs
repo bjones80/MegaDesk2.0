@@ -6,26 +6,38 @@ using System.Threading.Tasks;
 
 namespace MegaDeskProject_1
 {
+    enum DesktopMaterial
+    {
+        laminate,
+        oak,
+        rosewood,
+        veneer,
+        pine
+    }
+
+
+
     class Desk
     {
 
 
-        private int width;
-        private int depth;
-        private int numberOfDrawers;
-        private String surfaceMaterial;
+        public int width { get; set; }
+        public int depth { get; set; }
+        public int numDrawers { get; set; }
+        public int surfaceMaterial { get; set; }
 
-        public
-            enum DesktopMaterial
+
+        // Non-Default Constructor 
+        public Desk(int pvWidth, int pvDepth, int pvDrawers, int pvMaterial)
         {
-            laminate = 0,
-            oak = 1,
-            rosewood = 2,
-            veneer = 3,
-            pine = 4
+            this.width = pvWidth;
+            this.depth = pvDepth;
+            this.numDrawers = pvDrawers;
+            this.surfaceMaterial = pvMaterial;
         }
-
-        public float surfaceArea()
+        
+           
+        public decimal surfaceArea()
         {
             return width * depth;
         }

@@ -30,7 +30,7 @@
         {
             this.newQuote = new System.Windows.Forms.Label();
             this.custName = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCustomerName = new System.Windows.Forms.TextBox();
             this.deskSize = new System.Windows.Forms.Label();
             this.NumDrawers = new System.Windows.Forms.Label();
             this.surfaceMat = new System.Windows.Forms.Label();
@@ -43,7 +43,8 @@
             this.btnAddQuote = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.dropDelivery = new System.Windows.Forms.ComboBox();
-            this.dropSurfaceMaterial = new System.Windows.Forms.ComboBox();
+            this.cmbxSurfaceMaterial = new System.Windows.Forms.ComboBox();
+            this.txtValdaitionWarning = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numWidth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDepth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDrawer)).BeginInit();
@@ -53,7 +54,7 @@
             // 
             this.newQuote.AutoSize = true;
             this.newQuote.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newQuote.Location = new System.Drawing.Point(79, 39);
+            this.newQuote.Location = new System.Drawing.Point(123, 24);
             this.newQuote.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.newQuote.Name = "newQuote";
             this.newQuote.Size = new System.Drawing.Size(284, 58);
@@ -71,14 +72,14 @@
             this.custName.TabIndex = 1;
             this.custName.Text = "Customer Name:";
             // 
-            // textBox1
+            // txtCustomerName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(264, 133);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(229, 30);
-            this.textBox1.TabIndex = 2;
+            this.txtCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustomerName.Location = new System.Drawing.Point(264, 133);
+            this.txtCustomerName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCustomerName.Name = "txtCustomerName";
+            this.txtCustomerName.Size = new System.Drawing.Size(229, 30);
+            this.txtCustomerName.TabIndex = 2;
             // 
             // deskSize
             // 
@@ -193,7 +194,6 @@
             0,
             0,
             0});
-            this.numDepth.ValueChanged += new System.EventHandler(this.NumericUpDown2_ValueChanged);
             // 
             // numDrawer
             // 
@@ -238,38 +238,47 @@
             this.dropDelivery.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dropDelivery.FormattingEnabled = true;
             this.dropDelivery.Items.AddRange(new object[] {
-            "3 Day",
-            "5 Day ",
-            "7 Day",
-            "Normal (14 Day)"});
+            "3",
+            "5 ",
+            "7 ",
+            "14"});
             this.dropDelivery.Location = new System.Drawing.Point(164, 330);
             this.dropDelivery.Margin = new System.Windows.Forms.Padding(4);
             this.dropDelivery.Name = "dropDelivery";
             this.dropDelivery.Size = new System.Drawing.Size(160, 33);
             this.dropDelivery.TabIndex = 17;
             // 
-            // dropSurfaceMaterial
+            // cmbxSurfaceMaterial
             // 
-            this.dropSurfaceMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dropSurfaceMaterial.FormattingEnabled = true;
-            this.dropSurfaceMaterial.Items.AddRange(new object[] {
+            this.cmbxSurfaceMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbxSurfaceMaterial.FormattingEnabled = true;
+            this.cmbxSurfaceMaterial.Items.AddRange(new object[] {
             "Laminate",
             "Oak",
             "Rosewood",
             "Veneer",
             "Pine"});
-            this.dropSurfaceMaterial.Location = new System.Drawing.Point(277, 389);
-            this.dropSurfaceMaterial.Margin = new System.Windows.Forms.Padding(4);
-            this.dropSurfaceMaterial.Name = "dropSurfaceMaterial";
-            this.dropSurfaceMaterial.Size = new System.Drawing.Size(160, 33);
-            this.dropSurfaceMaterial.TabIndex = 18;
+            this.cmbxSurfaceMaterial.Location = new System.Drawing.Point(277, 389);
+            this.cmbxSurfaceMaterial.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbxSurfaceMaterial.Name = "cmbxSurfaceMaterial";
+            this.cmbxSurfaceMaterial.Size = new System.Drawing.Size(160, 33);
+            this.cmbxSurfaceMaterial.TabIndex = 18;
+            // 
+            // txtValdaitionWarning
+            // 
+            this.txtValdaitionWarning.AutoSize = true;
+            this.txtValdaitionWarning.Location = new System.Drawing.Point(116, 93);
+            this.txtValdaitionWarning.Name = "txtValdaitionWarning";
+            this.txtValdaitionWarning.Size = new System.Drawing.Size(0, 17);
+            this.txtValdaitionWarning.TabIndex = 19;
             // 
             // AddQuote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(579, 554);
-            this.Controls.Add(this.dropSurfaceMaterial);
+            this.Controls.Add(this.txtValdaitionWarning);
+            this.Controls.Add(this.cmbxSurfaceMaterial);
             this.Controls.Add(this.dropDelivery);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAddQuote);
@@ -282,7 +291,7 @@
             this.Controls.Add(this.surfaceMat);
             this.Controls.Add(this.NumDrawers);
             this.Controls.Add(this.deskSize);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCustomerName);
             this.Controls.Add(this.custName);
             this.Controls.Add(this.newQuote);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -300,7 +309,7 @@
 
         private System.Windows.Forms.Label newQuote;
         private System.Windows.Forms.Label custName;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCustomerName;
         private System.Windows.Forms.Label deskSize;
         private System.Windows.Forms.Label NumDrawers;
         private System.Windows.Forms.Label surfaceMat;
@@ -313,6 +322,7 @@
         private System.Windows.Forms.Button btnAddQuote;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.ComboBox dropDelivery;
-        private System.Windows.Forms.ComboBox dropSurfaceMaterial;
+        private System.Windows.Forms.ComboBox cmbxSurfaceMaterial;
+        private System.Windows.Forms.Label txtValdaitionWarning;
     }
 }
