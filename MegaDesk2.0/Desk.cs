@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MegaDeskProject_1
 {
-    enum DesktopMaterial
+    public enum DesktopMaterial
     {
         laminate,
         oak,
@@ -17,10 +17,8 @@ namespace MegaDeskProject_1
 
 
 
-    class Desk
+    public class Desk
     {
-
-
         public int width { get; set; }
         public int depth { get; set; }
         public int numDrawers { get; set; }

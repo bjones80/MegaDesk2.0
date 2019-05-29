@@ -29,17 +29,12 @@ namespace MegaDesk_Jones
              
         private void DisplayQuote_Load(object sender, EventArgs e)
         {
-            /*
              
             this.txtCustomerName.Text = currentQuote.customerName;
             this.txtWidth.Text = currentDesk.width.ToString();
             this.txtDepth.Text = currentDesk.depth.ToString();
             this.txtDrawers.Text = currentDesk.numDrawers.ToString();
             this.txtDelivery.Text = currentQuote.rushDays.ToString();
-
-            */
-
-
 
         }
 

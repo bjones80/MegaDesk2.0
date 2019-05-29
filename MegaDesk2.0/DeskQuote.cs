@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MegaDeskProject_1
 {
-    class DeskQuote
+    public class DeskQuote
     {
         const decimal BASE_PRICE = 200;
         public Desk newDesk { get; set; }
@@ -131,7 +131,7 @@ namespace MegaDeskProject_1
         //
         // calculate cost of matieral 
         //
-        public decimal calcMaterialCost( decimal pvMateralId)
+        public decimal calcMaterialCost(int pvMateralId)
         {
             decimal materialPrice;
             switch (pvMateralId)

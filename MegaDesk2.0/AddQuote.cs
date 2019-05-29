@@ -1,9 +1,11 @@
 ﻿using MegaDeskProject_1;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -68,21 +70,101 @@ namespace MegaDesk_Jones
                     Desk tempDesk = new Desk(width, depth, drawer, materialId);
                     DeskQuote tempQuote = new DeskQuote(tempDesk, shippingType, custName);
 
+                    // add quote to file
+                    AddQuoteToFile(tempQuote);
+                    
+
                     // show current quote 
                     DisplayQuote frmDisplayQuote = new DisplayQuote();
                     frmDisplayQuote.Show(this);
                     Hide();
                 }
-                catch
+                catch(Exception err)
                 {
 
-                    System.Windows.Forms.MessageBox.Show("Please retry your quote");
+                    System.Windows.Forms.MessageBox.Show("There was an error creating the quote. {0}", 
+                        err.InnerException.ToString());
 
                 }
             }
 
         }
+        private void AddQuoteToFile(DeskQuote deskQuote)
 
-       
+        {
+
+            var quotesFile = @"quotes.json";
+
+            List<DeskQuote> deskQuotes = new List<DeskQuote>();
+
+
+
+            // read existing quotes
+
+            if (File.Exists(quotesFile))
+
+            {
+
+                using (StreamReader reader = new StreamReader(quotesFile))
+
+                {
+
+                    // load existing quotes
+
+                    string quotes = reader.ReadToEnd();
+
+
+
+                    if (quotes.Length > 0)
+
+                    {
+
+                        // deserialize quotes
+
+                        deskQuotes = JsonConvert.DeserializeObject<List<DeskQuote>>(quotes);
+
+                    }
+
+                }
+
+            }
+
+
+
+            // add a new quote
+
+            deskQuotes.Add(deskQuote);
+
+
+
+            // save to file
+
+            SaveQuotes(deskQuotes);
+
+        }
+
+
+
+        private void SaveQuotes(List<DeskQuote> quotes)
+
+        {
+
+            var quotesFile = @"quotes.json";
+
+
+
+            // serilize quotes
+
+            var serializedQuotes = JsonConvert.SerializeObject(quotes);
+
+
+
+            // write quotes to file
+
+            File.WriteAllText(quotesFile, serializedQuotes);
+
+        }
+
+
     }
     }
