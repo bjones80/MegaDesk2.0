@@ -16,11 +16,12 @@ namespace MegaDesk_Jones
         private Form _mainMenu;
         // Desk currentDesk;
         DeskQuote _currentQuote;
-        public DisplayQuote(DeskQuote deskQuote)
+        public DisplayQuote(DeskQuote deskQuote, Form mainMenu)
         {
             InitializeComponent();
 
             _currentQuote = deskQuote;
+            _mainMenu = mainMenu;
 
             //TODO: populate surface material and shipping dropdowns
             cmbSurface.DataSource = Enum.GetValues(typeof(DesktopMaterial));

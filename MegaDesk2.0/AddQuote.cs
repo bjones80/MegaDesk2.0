@@ -88,7 +88,7 @@ namespace MegaDesk_Jones
                     
 
                     // show current quote 
-                    DisplayQuote frmDisplayQuote = new DisplayQuote(tempQuote);
+                    DisplayQuote frmDisplayQuote = new DisplayQuote(tempQuote, _mainMenu);
                     frmDisplayQuote.Show(this);
                     Hide();
                 }
