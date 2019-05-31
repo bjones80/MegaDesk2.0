@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnAddQuote = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.widthTxt = new System.Windows.Forms.Label();
             this.delivery = new System.Windows.Forms.Label();
@@ -39,33 +37,13 @@
             this.custName = new System.Windows.Forms.Label();
             this.newQuote = new System.Windows.Forms.Label();
             this.txtCustomerName = new System.Windows.Forms.TextBox();
-            this.txtDelivery = new System.Windows.Forms.TextBox();
             this.txtDrawers = new System.Windows.Forms.TextBox();
             this.txtDepth = new System.Windows.Forms.TextBox();
             this.txtWidth = new System.Windows.Forms.TextBox();
-            this.txtSurface = new System.Windows.Forms.TextBox();
+            this.cmbDelivery = new System.Windows.Forms.ComboBox();
+            this.cmbSurface = new System.Windows.Forms.ComboBox();
+            this.done = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(312, 343);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(100, 43);
-            this.btnCancel.TabIndex = 32;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            // 
-            // btnAddQuote
-            // 
-            this.btnAddQuote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddQuote.Location = new System.Drawing.Point(190, 343);
-            this.btnAddQuote.Name = "btnAddQuote";
-            this.btnAddQuote.Size = new System.Drawing.Size(100, 43);
-            this.btnAddQuote.TabIndex = 31;
-            this.btnAddQuote.Text = "Add Quote";
-            this.btnAddQuote.UseVisualStyleBackColor = true;
-            this.btnAddQuote.Click += new System.EventHandler(this.BtnAddQuote_Click);
             // 
             // label7
             // 
@@ -141,11 +119,11 @@
             // 
             this.newQuote.AutoSize = true;
             this.newQuote.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newQuote.Location = new System.Drawing.Point(183, 7);
+            this.newQuote.Location = new System.Drawing.Point(239, 9);
             this.newQuote.Name = "newQuote";
-            this.newQuote.Size = new System.Drawing.Size(229, 46);
+            this.newQuote.Size = new System.Drawing.Size(134, 46);
             this.newQuote.TabIndex = 19;
-            this.newQuote.Text = "New Quote";
+            this.newQuote.Text = "Quote";
             // 
             // txtCustomerName
             // 
@@ -153,13 +131,6 @@
             this.txtCustomerName.Name = "txtCustomerName";
             this.txtCustomerName.Size = new System.Drawing.Size(100, 20);
             this.txtCustomerName.TabIndex = 33;
-            // 
-            // txtDelivery
-            // 
-            this.txtDelivery.Location = new System.Drawing.Point(247, 248);
-            this.txtDelivery.Name = "txtDelivery";
-            this.txtDelivery.Size = new System.Drawing.Size(100, 20);
-            this.txtDelivery.TabIndex = 34;
             // 
             // txtDrawers
             // 
@@ -183,26 +154,45 @@
             this.txtWidth.Size = new System.Drawing.Size(100, 20);
             this.txtWidth.TabIndex = 37;
             // 
-            // txtSurface
+            // cmbDelivery
             // 
-            this.txtSurface.Location = new System.Drawing.Point(332, 297);
-            this.txtSurface.Name = "txtSurface";
-            this.txtSurface.Size = new System.Drawing.Size(100, 20);
-            this.txtSurface.TabIndex = 38;
+            this.cmbDelivery.FormattingEnabled = true;
+            this.cmbDelivery.Location = new System.Drawing.Point(248, 246);
+            this.cmbDelivery.Name = "cmbDelivery";
+            this.cmbDelivery.Size = new System.Drawing.Size(121, 21);
+            this.cmbDelivery.TabIndex = 38;
+            // 
+            // cmbSurface
+            // 
+            this.cmbSurface.FormattingEnabled = true;
+            this.cmbSurface.Location = new System.Drawing.Point(333, 294);
+            this.cmbSurface.Name = "cmbSurface";
+            this.cmbSurface.Size = new System.Drawing.Size(121, 21);
+            this.cmbSurface.TabIndex = 39;
+            // 
+            // done
+            // 
+            this.done.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.done.Location = new System.Drawing.Point(258, 353);
+            this.done.Name = "done";
+            this.done.Size = new System.Drawing.Size(88, 36);
+            this.done.TabIndex = 40;
+            this.done.Text = "Done";
+            this.done.UseVisualStyleBackColor = true;
+            this.done.Click += new System.EventHandler(this.Done_Click);
             // 
             // DisplayQuote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(614, 401);
-            this.Controls.Add(this.txtSurface);
+            this.Controls.Add(this.done);
+            this.Controls.Add(this.cmbSurface);
+            this.Controls.Add(this.cmbDelivery);
             this.Controls.Add(this.txtWidth);
             this.Controls.Add(this.txtDepth);
             this.Controls.Add(this.txtDrawers);
-            this.Controls.Add(this.txtDelivery);
             this.Controls.Add(this.txtCustomerName);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnAddQuote);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.widthTxt);
             this.Controls.Add(this.delivery);
@@ -211,7 +201,7 @@
             this.Controls.Add(this.deskSize);
             this.Controls.Add(this.custName);
             this.Controls.Add(this.newQuote);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DisplayQuote";
             this.Text = "Current Quote";
             this.Load += new System.EventHandler(this.DisplayQuote_Load);
@@ -221,8 +211,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnAddQuote;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label widthTxt;
         private System.Windows.Forms.Label delivery;
@@ -232,10 +220,11 @@
         private System.Windows.Forms.Label custName;
         private System.Windows.Forms.Label newQuote;
         private System.Windows.Forms.TextBox txtCustomerName;
-        private System.Windows.Forms.TextBox txtDelivery;
         private System.Windows.Forms.TextBox txtDrawers;
         private System.Windows.Forms.TextBox txtDepth;
         private System.Windows.Forms.TextBox txtWidth;
-        private System.Windows.Forms.TextBox txtSurface;
+        private System.Windows.Forms.ComboBox cmbDelivery;
+        private System.Windows.Forms.ComboBox cmbSurface;
+        private System.Windows.Forms.Button done;
     }
 }

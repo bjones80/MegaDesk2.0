@@ -23,17 +23,17 @@ namespace MegaDeskProject_1
         //
         // create new deskQuote from addQuote variables
         //
-        public DeskQuote(Desk deskCopy, decimal days, string name)
-        {
-            this.newDesk = deskCopy;
-            this.rushDays = days;
-            this.customerName = name;
-            this.quoteDate = DateTime.Now;
-            decimal area = newDesk.surfaceArea();
-            this.shippingCost = calcshippingCost(rushDays,area);
-            decimal materialCost = calcMaterialCost(newDesk.surfaceMaterial);
-            this.deskPrice = calcDeskPrice(materialCost, area, this.shippingCost);
-        }
+        //public DeskQuote(Desk deskCopy, decimal days, string name)
+        //{
+        //    this.newDesk = deskCopy;
+        //    this.rushDays = days;
+        //    this.customerName = name;
+        //    this.quoteDate = DateTime.Now;
+        //    decimal area = newDesk.surfaceArea();
+        //    this.shippingCost = calcshippingCost(rushDays,area);
+        //    decimal materialCost = calcMaterialCost(newDesk.surfaceMaterial);
+        //    this.deskPrice = calcDeskPrice(materialCost, area, this.shippingCost);
+        //}
         
         //
         // Prices from rushOrderPrices.txt will go here

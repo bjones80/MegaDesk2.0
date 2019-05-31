@@ -54,10 +54,9 @@
             // 
             this.newQuote.AutoSize = true;
             this.newQuote.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newQuote.Location = new System.Drawing.Point(123, 24);
-            this.newQuote.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.newQuote.Location = new System.Drawing.Point(92, 20);
             this.newQuote.Name = "newQuote";
-            this.newQuote.Size = new System.Drawing.Size(284, 58);
+            this.newQuote.Size = new System.Drawing.Size(229, 46);
             this.newQuote.TabIndex = 0;
             this.newQuote.Text = "New Quote";
             // 
@@ -65,30 +64,27 @@
             // 
             this.custName.AutoSize = true;
             this.custName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.custName.Location = new System.Drawing.Point(35, 133);
-            this.custName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.custName.Location = new System.Drawing.Point(26, 108);
             this.custName.Name = "custName";
-            this.custName.Size = new System.Drawing.Size(208, 29);
+            this.custName.Size = new System.Drawing.Size(166, 24);
             this.custName.TabIndex = 1;
             this.custName.Text = "Customer Name:";
             // 
             // txtCustomerName
             // 
             this.txtCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCustomerName.Location = new System.Drawing.Point(264, 133);
-            this.txtCustomerName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCustomerName.Location = new System.Drawing.Point(198, 108);
             this.txtCustomerName.Name = "txtCustomerName";
-            this.txtCustomerName.Size = new System.Drawing.Size(229, 30);
+            this.txtCustomerName.Size = new System.Drawing.Size(173, 26);
             this.txtCustomerName.TabIndex = 2;
             // 
             // deskSize
             // 
             this.deskSize.AutoSize = true;
             this.deskSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deskSize.Location = new System.Drawing.Point(35, 202);
-            this.deskSize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.deskSize.Location = new System.Drawing.Point(26, 164);
             this.deskSize.Name = "deskSize";
-            this.deskSize.Size = new System.Drawing.Size(137, 29);
+            this.deskSize.Size = new System.Drawing.Size(108, 24);
             this.deskSize.TabIndex = 4;
             this.deskSize.Text = "Desk Size:";
             // 
@@ -96,10 +92,9 @@
             // 
             this.NumDrawers.AutoSize = true;
             this.NumDrawers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumDrawers.Location = new System.Drawing.Point(35, 281);
-            this.NumDrawers.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NumDrawers.Location = new System.Drawing.Point(26, 228);
             this.NumDrawers.Name = "NumDrawers";
-            this.NumDrawers.Size = new System.Drawing.Size(246, 29);
+            this.NumDrawers.Size = new System.Drawing.Size(196, 24);
             this.NumDrawers.TabIndex = 5;
             this.NumDrawers.Text = "Number of Drawers:";
             // 
@@ -107,10 +102,9 @@
             // 
             this.surfaceMat.AutoSize = true;
             this.surfaceMat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.surfaceMat.Location = new System.Drawing.Point(35, 389);
-            this.surfaceMat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.surfaceMat.Location = new System.Drawing.Point(26, 316);
             this.surfaceMat.Name = "surfaceMat";
-            this.surfaceMat.Size = new System.Drawing.Size(223, 29);
+            this.surfaceMat.Size = new System.Drawing.Size(176, 24);
             this.surfaceMat.TabIndex = 6;
             this.surfaceMat.Text = "Surface Materials:";
             // 
@@ -118,10 +112,9 @@
             // 
             this.delivery.AutoSize = true;
             this.delivery.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delivery.Location = new System.Drawing.Point(35, 330);
-            this.delivery.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.delivery.Location = new System.Drawing.Point(26, 268);
             this.delivery.Name = "delivery";
-            this.delivery.Size = new System.Drawing.Size(115, 29);
+            this.delivery.Size = new System.Drawing.Size(91, 24);
             this.delivery.TabIndex = 7;
             this.delivery.Text = "Delivery:";
             // 
@@ -129,10 +122,9 @@
             // 
             this.widthTxt.AutoSize = true;
             this.widthTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.widthTxt.Location = new System.Drawing.Point(187, 190);
-            this.widthTxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.widthTxt.Location = new System.Drawing.Point(140, 154);
             this.widthTxt.Name = "widthTxt";
-            this.widthTxt.Size = new System.Drawing.Size(69, 25);
+            this.widthTxt.Size = new System.Drawing.Size(54, 20);
             this.widthTxt.TabIndex = 8;
             this.widthTxt.Text = "Width:";
             // 
@@ -140,18 +132,16 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(187, 224);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(140, 182);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 25);
+            this.label7.Size = new System.Drawing.Size(57, 20);
             this.label7.TabIndex = 9;
             this.label7.Text = "Depth:";
             // 
             // numWidth
             // 
             this.numWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numWidth.Location = new System.Drawing.Point(267, 182);
-            this.numWidth.Margin = new System.Windows.Forms.Padding(4);
+            this.numWidth.Location = new System.Drawing.Point(200, 148);
             this.numWidth.Maximum = new decimal(new int[] {
             96,
             0,
@@ -163,7 +153,7 @@
             0,
             0});
             this.numWidth.Name = "numWidth";
-            this.numWidth.Size = new System.Drawing.Size(103, 30);
+            this.numWidth.Size = new System.Drawing.Size(77, 26);
             this.numWidth.TabIndex = 10;
             this.numWidth.Value = new decimal(new int[] {
             24,
@@ -174,8 +164,7 @@
             // numDepth
             // 
             this.numDepth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numDepth.Location = new System.Drawing.Point(267, 222);
-            this.numDepth.Margin = new System.Windows.Forms.Padding(4);
+            this.numDepth.Location = new System.Drawing.Point(200, 180);
             this.numDepth.Maximum = new decimal(new int[] {
             48,
             0,
@@ -187,7 +176,7 @@
             0,
             0});
             this.numDepth.Name = "numDepth";
-            this.numDepth.Size = new System.Drawing.Size(103, 30);
+            this.numDepth.Size = new System.Drawing.Size(77, 26);
             this.numDepth.TabIndex = 11;
             this.numDepth.Value = new decimal(new int[] {
             24,
@@ -198,24 +187,22 @@
             // numDrawer
             // 
             this.numDrawer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numDrawer.Location = new System.Drawing.Point(304, 281);
-            this.numDrawer.Margin = new System.Windows.Forms.Padding(4);
+            this.numDrawer.Location = new System.Drawing.Point(228, 228);
             this.numDrawer.Maximum = new decimal(new int[] {
             7,
             0,
             0,
             0});
             this.numDrawer.Name = "numDrawer";
-            this.numDrawer.Size = new System.Drawing.Size(103, 30);
+            this.numDrawer.Size = new System.Drawing.Size(77, 26);
             this.numDrawer.TabIndex = 14;
             // 
             // btnAddQuote
             // 
             this.btnAddQuote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddQuote.Location = new System.Drawing.Point(89, 452);
-            this.btnAddQuote.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddQuote.Location = new System.Drawing.Point(67, 367);
             this.btnAddQuote.Name = "btnAddQuote";
-            this.btnAddQuote.Size = new System.Drawing.Size(133, 53);
+            this.btnAddQuote.Size = new System.Drawing.Size(100, 43);
             this.btnAddQuote.TabIndex = 15;
             this.btnAddQuote.Text = "Add Quote";
             this.btnAddQuote.UseVisualStyleBackColor = true;
@@ -224,10 +211,9 @@
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(251, 452);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancel.Location = new System.Drawing.Point(188, 367);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(133, 53);
+            this.btnCancel.Size = new System.Drawing.Size(100, 43);
             this.btnCancel.TabIndex = 16;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -242,41 +228,34 @@
             "5 ",
             "7 ",
             "14"});
-            this.dropDelivery.Location = new System.Drawing.Point(164, 330);
-            this.dropDelivery.Margin = new System.Windows.Forms.Padding(4);
+            this.dropDelivery.Location = new System.Drawing.Point(123, 268);
             this.dropDelivery.Name = "dropDelivery";
-            this.dropDelivery.Size = new System.Drawing.Size(160, 33);
+            this.dropDelivery.Size = new System.Drawing.Size(121, 28);
             this.dropDelivery.TabIndex = 17;
             // 
             // cmbxSurfaceMaterial
             // 
             this.cmbxSurfaceMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbxSurfaceMaterial.FormattingEnabled = true;
-            this.cmbxSurfaceMaterial.Items.AddRange(new object[] {
-            "Laminate",
-            "Oak",
-            "Rosewood",
-            "Veneer",
-            "Pine"});
-            this.cmbxSurfaceMaterial.Location = new System.Drawing.Point(277, 389);
-            this.cmbxSurfaceMaterial.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbxSurfaceMaterial.Location = new System.Drawing.Point(208, 316);
             this.cmbxSurfaceMaterial.Name = "cmbxSurfaceMaterial";
-            this.cmbxSurfaceMaterial.Size = new System.Drawing.Size(160, 33);
+            this.cmbxSurfaceMaterial.Size = new System.Drawing.Size(121, 28);
             this.cmbxSurfaceMaterial.TabIndex = 18;
             // 
             // txtValdaitionWarning
             // 
             this.txtValdaitionWarning.AutoSize = true;
-            this.txtValdaitionWarning.Location = new System.Drawing.Point(116, 93);
+            this.txtValdaitionWarning.Location = new System.Drawing.Point(87, 76);
+            this.txtValdaitionWarning.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtValdaitionWarning.Name = "txtValdaitionWarning";
-            this.txtValdaitionWarning.Size = new System.Drawing.Size(0, 17);
+            this.txtValdaitionWarning.Size = new System.Drawing.Size(0, 13);
             this.txtValdaitionWarning.TabIndex = 19;
             // 
             // AddQuote
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(579, 554);
+            this.ClientSize = new System.Drawing.Size(434, 450);
             this.Controls.Add(this.txtValdaitionWarning);
             this.Controls.Add(this.cmbxSurfaceMaterial);
             this.Controls.Add(this.dropDelivery);
@@ -294,7 +273,6 @@
             this.Controls.Add(this.txtCustomerName);
             this.Controls.Add(this.custName);
             this.Controls.Add(this.newQuote);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddQuote";
             this.Text = "Add Quote";
             ((System.ComponentModel.ISupportInitialize)(this.numWidth)).EndInit();

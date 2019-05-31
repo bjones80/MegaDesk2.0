@@ -38,25 +38,26 @@ namespace MegaDesk_Jones
             int depth = (int)numDepth.Value;
             int drawer = (int)numDrawer.Value;
             decimal shippingType = Convert.ToDecimal(dropDelivery.Text);
-            string materialType = cmbxSurfaceMaterial.Text;
-            int materialId = 1;
+            //string materialType = cmbxSurfaceMaterial.Text;
+
+            // int materialId = 1;
 
             // Create materialId from materialType 
-            switch (materialType)
-            {
-                case "oak":
-                    materialId = 1;
-                    break;
-                case "pine":
-                    materialId = 2;
-                    break;
-                case "rosewood":
-                    materialId = 3;
-                    break;
-                case "veneer":
-                    materialId = 4;
-                    break;
-                                }
+            //switch (materialType)
+            //{
+            //    case "oak":
+            //        materialId = 1;
+            //        break;
+            //    case "pine":
+            //        materialId = 2;
+            //        break;
+            //    case "rosewood":
+            //        materialId = 3;
+            //        break;
+            //    case "veneer":
+            //        materialId = 4;
+            //        break;
+            //                    }
             if (custName == "" || custName.All(char.IsDigit))
             {
                 System.Windows.Forms.MessageBox.Show("Please enter a valid name");
@@ -67,15 +68,27 @@ namespace MegaDesk_Jones
                 try
                 {
                     //create desk and quote 
-                    Desk tempDesk = new Desk(width, depth, drawer, materialId);
-                    DeskQuote tempQuote = new DeskQuote(tempDesk, shippingType, custName);
+                    Desk tempDesk = new Desk()
+                    {
+                        width = width,
+                        depth = depth,
+                        numDrawers = drawer,
+                        surfaceMaterial = (DesktopMaterial)cmbxSurfaceMaterial.SelectedValue
+                    };
 
+                    DeskQuote tempQuote = new DeskQuote()
+                    {
+                        customerName = custName,
+                        newDesk = tempDesk,
+                        rushDays = shippingType
+                    };
+                      
                     // add quote to file
                     AddQuoteToFile(tempQuote);
                     
 
                     // show current quote 
-                    DisplayQuote frmDisplayQuote = new DisplayQuote();
+                    DisplayQuote frmDisplayQuote = new DisplayQuote(tempQuote);
                     frmDisplayQuote.Show(this);
                     Hide();
                 }

@@ -22,17 +22,17 @@ namespace MegaDeskProject_1
         public int width { get; set; }
         public int depth { get; set; }
         public int numDrawers { get; set; }
-        public int surfaceMaterial { get; set; }
+        public DesktopMaterial surfaceMaterial { get; set; }
 
 
         // Non-Default Constructor 
-        public Desk(int pvWidth, int pvDepth, int pvDrawers, int pvMaterial)
-        {
-            this.width = pvWidth;
-            this.depth = pvDepth;
-            this.numDrawers = pvDrawers;
-            this.surfaceMaterial = pvMaterial;
-        }
+        //public Desk(int pvWidth, int pvDepth, int pvDrawers, int pvMaterial)
+        //{
+        //    this.width = pvWidth;
+        //    this.depth = pvDepth;
+        //    this.numDrawers = pvDrawers;
+        //    this.surfaceMaterial = pvMaterial;
+        //}
         
            
         public decimal surfaceArea()
