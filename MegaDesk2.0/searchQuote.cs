@@ -21,6 +21,7 @@ namespace MegaDesk_Jones
             InitializeComponent();
             _mainMenu = mainMenu;
             cmbxSurfaceMaterial.DataSource = Enum.GetValues(typeof(DesktopMaterial));
+            cmbxSurfaceMaterial.SelectedIndex = -1;
 
             loadGrid();
         }
@@ -48,11 +49,50 @@ namespace MegaDesk_Jones
                 }).ToList();
             }
         }
+        private void loadGrid(DesktopMaterial desktopMaterial)
+        {
+            var quotesFile = @"quotes.json";
+
+            using (StreamReader reader = new StreamReader(quotesFile))
+            {
+                string quotes = reader.ReadToEnd();
+                List<DeskQuote> deskQuotes = JsonConvert.DeserializeObject<List<DeskQuote>>(quotes);
+
+
+                dataGridView1.DataSource = deskQuotes.Select(d => new
+                {
+                    Date = d.quoteDate,
+                    Customer = d.customerName,
+                    Depth = d.newDesk.depth,
+                    Width = d.newDesk.width,
+                    Drawers = d.newDesk.numDrawers,
+                    SurfaceMaterial = d.newDesk.surfaceMaterial,
+                    DeliveryType = d.rushDays,
+                    QuoteAmount = d.deskPrice.ToString("c")
+                })
+                    .Where(q => q.SurfaceMaterial == desktopMaterial)
+                    .ToList();
+            }
+        }
 
         private void Button1_Click(object sender, EventArgs e)
         {
             _mainMenu.Show();
             Close();
+        }
+
+        private void CmbxSurfaceMaterial_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ComboBox combo = (ComboBox)sender;
+
+            if (combo.SelectedIndex < 0)
+            {
+                loadGrid();
+            }
+            else
+            {
+                loadGrid((DesktopMaterial)combo.SelectedValue);
+            }
         }
     }
 }

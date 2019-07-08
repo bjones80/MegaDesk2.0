@@ -72,6 +72,7 @@
             this.cmbxSurfaceMaterial.Name = "cmbxSurfaceMaterial";
             this.cmbxSurfaceMaterial.Size = new System.Drawing.Size(121, 28);
             this.cmbxSurfaceMaterial.TabIndex = 3;
+            this.cmbxSurfaceMaterial.SelectedIndexChanged += new System.EventHandler(this.CmbxSurfaceMaterial_SelectedIndexChanged);
             // 
             // label2
             // 
